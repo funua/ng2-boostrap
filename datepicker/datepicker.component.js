@@ -25,7 +25,7 @@ export var DatePickerComponent = (function () {
         this._now = new Date();
         this.config = config;
         this.configureOptions();
-        moment.locale('uk');
+        moment.locale(this.locale);
     }
     Object.defineProperty(DatePickerComponent.prototype, "activeDate", {
         /** currently active date */
