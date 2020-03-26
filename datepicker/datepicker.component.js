@@ -15,6 +15,7 @@ export var DatePickerComponent = (function () {
         this.datepickerMode = 'day';
         /** if false week numbers will be hidden */
         this.showWeeks = true;
+        this.locale = 'en';
         this.selectionDone = new EventEmitter(undefined);
         /** callback to invoke when the activeDate is changed. */
         this.activeDateChange = new EventEmitter(undefined);
@@ -23,6 +24,7 @@ export var DatePickerComponent = (function () {
         this._now = new Date();
         this.config = config;
         this.configureOptions();
+        moment.locale('uk');
     }
     Object.defineProperty(DatePickerComponent.prototype, "activeDate", {
         /** currently active date */
@@ -102,6 +104,7 @@ export var DatePickerComponent = (function () {
         'activeDate': [{ type: Input },],
         'selectionDone': [{ type: Output },],
         'activeDateChange': [{ type: Output },],
+        'locale': [{ type: Input },],
         '_datePicker': [{ type: ViewChild, args: [DatePickerInnerComponent,] },],
     };
     return DatePickerComponent;
