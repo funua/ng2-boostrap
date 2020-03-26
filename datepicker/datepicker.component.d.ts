@@ -61,6 +61,7 @@ export declare class DatePickerComponent implements ControlValueAccessor {
     _datePicker: DatePickerInnerComponent;
     onChange: any;
     onTouched: any;
+    locale: string;
     protected _now: Date;
     protected _activeDate: Date;
     protected config: DatepickerConfig;
