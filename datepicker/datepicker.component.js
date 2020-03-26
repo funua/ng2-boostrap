@@ -25,7 +25,6 @@ export var DatePickerComponent = (function () {
         this._now = new Date();
         this.config = config;
         this.configureOptions();
-        moment.locale(this.locale);
     }
     Object.defineProperty(DatePickerComponent.prototype, "activeDate", {
         /** currently active date */
@@ -38,6 +37,9 @@ export var DatePickerComponent = (function () {
         enumerable: true,
         configurable: true
     });
+    DatePickerComponent.prototype.ngOnInit = function () {
+        moment.locale(this.locale);
+    };
     DatePickerComponent.prototype.configureOptions = function () {
         Object.assign(this, this.config);
     };
