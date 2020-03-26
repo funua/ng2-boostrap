@@ -15,4 +15,5 @@ export declare class DatepickerConfig {
     monthColLimit: number;
     yearColLimit: number;
     shortcutPropagation: boolean;
+    locale: string;
 }

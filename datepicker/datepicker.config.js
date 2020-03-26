@@ -14,6 +14,7 @@ export var DatepickerConfig = (function () {
         this.formatDayTitle = 'MMMM YYYY';
         this.formatMonthTitle = 'YYYY';
         this.onlyCurrentMonth = false;
+        this.locale = 'en';
         this.monthColLimit = 3;
         this.yearColLimit = 5;
         this.shortcutPropagation = false;
