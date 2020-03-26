@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, Output, ViewChild, forwardRef } from '@
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DatePickerInnerComponent } from './datepicker-inner.component';
 import { DatepickerConfig } from './datepicker.config';
+import moment from 'moment';
 export var DATEPICKER_CONTROL_VALUE_ACCESSOR = {
     provide: NG_VALUE_ACCESSOR,
     useExisting: forwardRef(function () { return DatePickerComponent; }),
