@@ -67,6 +67,7 @@ export declare class DatePickerComponent implements ControlValueAccessor {
     protected config: DatepickerConfig;
     constructor(config: DatepickerConfig);
     configureOptions(): void;
+    ngOnInit(): void;
     onUpdate(event: any): void;
     onSelectionDone(event: Date): void;
     onActiveDateChange(event: Date): void;

@@ -454,6 +454,11 @@
                             "__symbolic": "method"
                         }
                     ],
+                    "ngOnInit":[
+                        {
+                            "__symbolic": "method"
+                        }
+                    ],
                     "onUpdate": [
                         {
                             "__symbolic": "method"
@@ -924,6 +929,11 @@
                         }
                     ],
                     "configureOptions": [
+                        {
+                            "__symbolic": "method"
+                        }
+                    ],
+                    "ngOnInit":[
                         {
                             "__symbolic": "method"
                         }
